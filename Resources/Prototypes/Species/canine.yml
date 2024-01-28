@@ -1,0 +1,163 @@
+﻿- type: species
+  id: canine
+  name: species-name-canine
+  roundStart: true
+  prototype: MobCanine
+  sprites: MobCanineSprites
+  defaultSkinTone: "#385878"
+  markingLimits: MobCanineMarkingLimits
+  dollPrototype: MobCanineDummy
+  skinColoration: Hues
+  maleFirstNames: names_canine_first
+  femaleFirstNames: names_canine_first
+  lastNames: names_canine_last
+  sexes:
+    - Male
+    - Female
+    - Unsexed
+
+- type: speciesBaseSprites
+  id: MobCanineSprites
+  sprites:
+    Head: MobCanineHead
+    Snout: MobHumanoidAnyMarking
+    Chest: MobCanineTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobCanineEyes
+    LArm: MobCanineLArm
+    RArm: MobCanineRArm
+    LHand: MobCanineLHand
+    RHand: MobCanineRHand
+    LLeg: MobCanineLLeg
+    RLeg: MobCanineRLeg
+    LFoot: MobCanineLFoot
+    RFoot: MobCanineRFoot
+
+- type: humanoidBaseSprite
+  id: MobCanineEyes
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: eyes
+
+- type: markingPoints
+  id: MobCanineMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ CanineTailDefault ]
+    Snout:
+      points: 1
+      required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [ CanineEarsDefault ]
+    Head:
+      points: 1
+      required: false
+    HeadSide:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 2
+      required: false
+    Arms:
+      points: 2
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobCanineHead
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobCanineHeadMale
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobCanineHeadFemale
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobCanineTorso
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobCanineTorsoMale
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobCanineTorsoFemale
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobCanineLLeg
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobCanineLArm
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobCanineLHand
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobCanineLFoot
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobCanineRLeg
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobCanineRArm
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobCanineRHand
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobCanineRFoot
+  baseSprite:
+    sprite: Mobs/Species/Canine/parts.rsi
+    state: r_foot

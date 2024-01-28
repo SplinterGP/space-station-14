@@ -1,0 +1,163 @@
+﻿- type: species
+  id: feline
+  name: species-name-feline
+  roundStart: true
+  prototype: MobFeline
+  sprites: MobFelineSprites
+  defaultSkinTone: "#385878"
+  markingLimits: MobFelineMarkingLimits
+  dollPrototype: MobFelineDummy
+  skinColoration: Hues
+  maleFirstNames: names_feline_first
+  femaleFirstNames: names_feline_first
+  lastNames: names_feline_last
+  sexes:
+    - Male
+    - Female
+    - Unsexed
+
+- type: speciesBaseSprites
+  id: MobFelineSprites
+  sprites:
+    Head: MobFelineHead
+    Snout: MobHumanoidAnyMarking
+    Chest: MobFelineTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobFelineEyes
+    LArm: MobFelineLArm
+    RArm: MobFelineRArm
+    LHand: MobFelineLHand
+    RHand: MobFelineRHand
+    LLeg: MobFelineLLeg
+    RLeg: MobFelineRLeg
+    LFoot: MobFelineLFoot
+    RFoot: MobFelineRFoot
+
+- type: humanoidBaseSprite
+  id: MobFelineEyes
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: eyes
+
+- type: markingPoints
+  id: MobFelineMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ FelineTailDefault ]
+    Snout:
+      points: 1
+      required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [ FelineEarsDefault ]
+    Head:
+      points: 1
+      required: false
+    HeadSide:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 2
+      required: false
+    Arms:
+      points: 2
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobFelineHead
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobFelineHeadMale
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobFelineHeadFemale
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobFelineTorso
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobFelineTorsoMale
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobFelineTorsoFemale
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobFelineLLeg
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobFelineLArm
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobFelineLHand
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobFelineLFoot
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobFelineRLeg
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobFelineRArm
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobFelineRHand
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobFelineRFoot
+  baseSprite:
+    sprite: Mobs/Species/Feline/parts.rsi
+    state: r_foot

@@ -1,0 +1,163 @@
+﻿- type: species
+  id: fennec
+  name: species-name-fennec
+  roundStart: true
+  prototype: MobFennec
+  sprites: MobFennecSprites
+  defaultSkinTone: "#385878"
+  markingLimits: MobFennecMarkingLimits
+  dollPrototype: MobFennecDummy
+  skinColoration: Hues
+  maleFirstNames: names_fennec_first
+  femaleFirstNames: names_fennec_first
+  lastNames: names_fennec_last
+  sexes:
+    - Male
+    - Female
+    - Unsexed
+
+- type: speciesBaseSprites
+  id: MobFennecSprites
+  sprites:
+    Head: MobFennecHead
+    Snout: MobHumanoidAnyMarking
+    Chest: MobFennecTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobFennecEyes
+    LArm: MobFennecLArm
+    RArm: MobFennecRArm
+    LHand: MobFennecLHand
+    RHand: MobFennecRHand
+    LLeg: MobFennecLLeg
+    RLeg: MobFennecRLeg
+    LFoot: MobFennecLFoot
+    RFoot: MobFennecRFoot
+
+- type: humanoidBaseSprite
+  id: MobFennecEyes
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: eyes
+
+- type: markingPoints
+  id: MobFennecMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ FennecTailDefault ]
+    Snout:
+      points: 1
+      required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [ FennecEarsDefault ]
+    Head:
+      points: 1
+      required: false
+    HeadSide:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 2
+      required: false
+    Arms:
+      points: 2
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobFennecHead
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobFennecHeadMale
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobFennecHeadFemale
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobFennecTorso
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobFennecTorsoMale
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobFennecTorsoFemale
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobFennecLLeg
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobFennecLArm
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobFennecLHand
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobFennecLFoot
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobFennecRLeg
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobFennecRArm
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobFennecRHand
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobFennecRFoot
+  baseSprite:
+    sprite: Mobs/Species/Fennec/parts.rsi
+    state: r_foot
